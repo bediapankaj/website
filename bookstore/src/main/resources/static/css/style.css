@@ -1,0 +1,163 @@
+body {
+	
+	/*background-image:  url("/images/back.jpg");*/
+	color: rgb(255, 255, 255);
+	background-color: rgb(65 53 53);
+}
+
+#main-content {
+	min-height: 81px;
+	margin-top: 17px;
+}
+.container-fluid{
+	
+	background-color:darkslategrey;
+	 box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+	  
+}
+.card-deck{
+	    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: -webkit-fill-available;
+      
+}
+  
+ 
+.card-deck .card{
+	 box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+	 
+	
+}
+.bg-dark{
+	background-color: gray;
+}
+.pagination{
+	padding-left: 12px;
+}
+ 
+.no-padding {
+	padding: 0;
+}
+
+.table th, td {
+	text-align: center;
+}
+
+.field-error {
+	border-color: #FF0000;
+	margin-bottom: 10px;
+}
+
+.fa-bigger {
+	font-size: 1.5em;
+}
+
+.form-control {
+	color:black;
+}
+
+.social-icons{
+	
+    display: ruby-text;
+}
+.social-icons li{
+	display:flex;
+	padding: 12px;
+}
+
+
+.slider_container {
+  position: relative;
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 30px;
+  box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+  
+}
+.slider {
+  position: relative;
+  width: 400%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
+}
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide .caption {
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  font-size: 5rem;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  background: rgba(0, 0, 0, 0.348);
+  backdrop-filter: blur(10px);
+  padding: 1rem 5rem;
+  border-radius: 0 2rem 2rem 0;
+}
+.slide.one {
+  background: rgb(182, 19, 109);
+}
+.slide.two {
+  background: rgb(255, 64, 64);
+}
+.slide.three {
+  background: rgb(11, 173, 188);
+}
+ 
+@keyframes sliding {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
+
+
+
+
+
+.site-footer{
+	padding-top: 29px;
+ 
+	background-color: darkslategrey;
+}
