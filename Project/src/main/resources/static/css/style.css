@@ -1,0 +1,589 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-color: #f9f1fa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* ------------------------------------------------------------------------header------------------------------------------------------*/
+.header {
+            
+            color: black;
+            padding: 10px 20px;
+            display: flex;
+           justify-content: space-between;
+            align-items: center;
+            border-top: 8px solid #122b55;
+            width: -webkit-fill-available; 
+        }
+        .header a{
+        text-decoration: none;
+        }
+        .header.fa-book {
+            position: absolute;
+            left: 10px;
+            color: #333;
+        }
+        .header h1 {
+            margin: 0;
+            padding-left: 2px
+        }
+         
+       
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 10px;
+            background-color:white;
+            
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            background-color: #808080;
+            color: black;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .auth-buttons button {
+            padding: 5px 10px;
+            background-color: #c0c0c0;
+            color: black;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+       
+ /*second header*/
+
+header {
+    background-color: #311b92;
+    width: -webkit-fill-available;
+
+}
+.menu li a, .settings-button {
+            cursor: pointer;
+            color: white;
+            float: right;
+        }
+ 
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #122b55;
+}
+ 
+.menu li {
+    float: left;
+}
+ 
+     
+
+.menu li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    
+    text-decoration: none;
+}
+
+.menu li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #311b92;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* slide cointainer style */
+.slider-container {
+    margin-top: 1px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    width: 400%;
+    height: 400px;
+    left: 0;
+    top: 0;
+    animation: slide 20s infinite;
+}
+
+.slider img {
+    float: left;
+    width: 25%;
+    height: 400px;
+    padding: 0px;
+    box-shadow: 2px 5px 10px #0454de;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -300%;
+    }
+}
+
+
+/* Service Section */
+#services {
+    margin-top: 500px;
+    display: flex;
+    margin: 1px 17px;
+}
+
+#services .box {
+    /* border: 2px solid rgb(0, 89, 255); */
+    box-shadow: 0.5px 0.4px 5px 0.5px #153D82;
+    padding: 30px;
+    margin: 10px 40px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(198,232,246);
+background: linear-gradient(45deg, rgba(198,232,246,1) 0%, rgba(59,131,251,1) 100%);
+}
+
+#services .box img {
+    height: 150px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Merriweather', serif;
+}
+
+.h-primary {
+    color: rgb(4, 54, 104);
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+}
+
+.h-secondary {
+    padding: 12px;
+    font-size: 21px;
+    font-family: 'Acme', sans-serif;
+    color: rgb(4, 28, 128);
+}
+
+.text-desc {
+    text-align: center;
+    font-size: 15px;
+
+
+}
+
+.text-center {
+    text-align: center;
+    font-family: 'Suwannaphum', serif;
+}
+
+/* button style */
+.order {
+    padding: 8px 30px;
+    margin: 10px 145px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.order:hover {
+    background: rgb(7,190,0);
+background: linear-gradient(90deg, rgba(7,190,0,1) 0%, rgba(0,115,54,1) 51%, rgba(30,194,74,1) 100%, rgba(179,203,212,1) 100%);
+transition: 0.5s ease-in ;
+}
+
+/* SM-Tech all course style............ */
+.course-container {
+    max-width: 100%;
+    margin: 10 auto;
+    margin-top: 50px;
+    /* text-align: center; */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid rgb(112, 195, 255);
+    box-shadow: 0px -1px 22px 10px #0454de;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin: 40px 50px;
+    background: rgb(217,240,250);
+background: linear-gradient(45deg, rgba(217,240,250,1) 0%, rgba(234,242,249,1) 100%);
+}
+
+
+/* Teachers detail................... */
+.course-all {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+}
+
+.course-all .all-course {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5px 0.4px 5px 0.5px rgb(9, 9, 9);
+    padding: 15px 25px;
+    margin: 10px 40px;
+    width: 500px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background: rgb(59,131,251);
+    background: linear-gradient(45deg, rgba(59,131,251,1) 0%, rgba(167,227,251,1) 51%);
+
+}
+
+.c-detail{
+    font-family: 'Alkatra', cursive;
+    line-height: 17px;
+}
+
+.all-course img {
+    width: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 4px 6px 7px black;
+}
+
+
+.course-name {
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    color: darkblue;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bold;
+    font-family: 'Suwannaphum', serif; 
+}
+
+/* Arrow Button Style............. */
+#scrollToTopButton {
+    display: none;
+    position:fixed;
+    bottom: 42px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: #0372a0;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #scrollToTopButton i {
+    font-size: 24px;
+  }
+
+  /* form container style start............ */
+  .f-container p {
+    color: darkgreen;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Alkatra', cursive;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    margin: 5px 40px;
+    padding: 15px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(72, 8, 58, 1) 0%, rgba(1, 106, 128, 1) 100%);
+    color: rgb(3, 30, 61);
+    box-shadow: 5px 10px 20px black;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.f-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-s {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.form-s>i {
+    min-width: 40px;
+    padding: 10px;
+    text-align: center;
+    background: rgb(243, 243, 182);
+    color: rgb(33, 29, 248);
+    border: 1px solid rgb(250, 250, 183);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.form-s:hover>i {
+    background: #0076ff;
+    color: white;
+}
+
+.form-s>input[type="text"],
+.form-s>input[type="email"],
+.form-s>input[type="password"],
+.form-s>input[type="tel"],
+.form-s>input[type="date"] {
+    outline: none;
+    border: none;
+    padding: 5px;
+    border: 1px solid rgb(247, 247, 247);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    font-family: 'EB Garamond', serif;
+
+}
+
+.form-s>input[type="submit"] {
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 75%;
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 20px;
+    color: #0076ff;
+    background: rgb(58, 180, 148);
+    background: linear-gradient(90deg, rgba(58, 180, 148, 1) 0%, rgba(210, 253, 29, 1) 50%, rgba(69, 248, 252, 1) 100%);
+    transition-duration: 0.5s;
+    font-family: 'EB Garamond', serif;
+
+}
+
+input {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-s>input[type="submit"]:hover {
+    color: white;
+    background: rgb(58, 180, 148);
+    background: linear-gradient(90deg, rgba(58, 180, 148, 1) 100%, rgba(210, 253, 29, 1) 100%, rgba(69, 248, 252, 1) 100%);
+    border: 1px solid white;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+}
+
+.material-icon {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+/* medai query......................................... */
+@media only screen and (max-width: 700px) {
+    .slider-container {
+        margin-top: 50px;
+        width: 100%;
+        height: 255px;
+    }
+
+    .slider img {
+        width: 25%;
+        height: 245px;
+    }
+
+    /* Services Section */
+
+    #services {
+        flex-direction: column;
+    }
+
+    #services .box {
+        padding: 10px;
+        margin: 10px 0px;
+        margin-bottom: 20px;
+    }
+
+    .h-primary {
+        padding: 1px 5px;
+        font-size: 22px;
+        margin-top: 12px;
+    }
+
+    .h-secondary {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    /* SM-tech Course style */
+    .course-container {
+        max-width: 88%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .course-name {
+        font-size: 15px;
+    }
+
+    .all-course img {
+        width: 80px;
+    }
+
+    .course-all .all-course {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0.5px 0.4px 5px 0.5px rgb(9, 9, 9);
+        padding: 5px 10px;
+        margin: 8px 1px;
+    
+    }
+
+    /* form container style */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .form-s>i {
+        min-width: 30px;
+        padding: 8px;
+    }
+
+    input {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .f-container p {
+        font-size: 20px;
+    }
+
+}
+
+
+/* media query 700px to 850px */
+@media screen and (max-width: 850px) and (min-width: 700px) {
+    #services .box {
+        border: 2px solid rgb(0, 89, 255);
+        padding: 10px;
+        margin: 2px 8px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+    }
+
+    .h-secondary {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+}

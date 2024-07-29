@@ -1,0 +1,121 @@
+@charset "UTF-8";* {
+   box-sizing: border-box;
+}
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+}
+
+footer {
+   height: 155px;
+   width: 100%;
+   color: #fff;
+   background: #153D82;
+   position: relative;
+   font-size: 70%;
+}
+
+.f-copyright {
+   width: 100%;
+   height: flex;
+   background: rgb(2, 76, 172);
+   padding: 10px;
+   font-size: 15px;
+   position: absolute;
+   text-align: center;
+   left: 0px;
+   bottom: 0px;
+}
+
+.f-body {
+   /* margin-bottom: 40px; */
+   align-items: center;
+}
+
+.f-body::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+
+.f-body>div {
+   float: left;
+   padding: 10px;
+}
+
+.f-body>div:first-child {
+   width: 40%;
+   text-align: center;
+}
+
+.f-body>div:last-child {
+   width: 60%;
+}
+
+#foot-logo img {
+   height: 100%;
+   cursor: pointer;
+   width: 140px;
+   padding: 0px 5px;
+}
+
+.f-body ul {
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+   text-align: center;
+}
+
+.f-body li>a {
+   color: white;
+   text-decoration: none;
+   margin-bottom: 7px;
+   font-size: 15px;
+}
+
+.decription {
+   display: block;
+   line-height: 18px;
+   margin: 0%;
+}
+
+ul li {
+   margin: 5px;
+}
+
+#brand,
+#school-brand {
+   font-weight: bold;
+   color: aqua;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+
+/* Media Queries style of Footer............. */
+@media only screen and (max-width: 700px) {
+   footer {
+      height: 140px;
+   }
+
+   ul li {
+      margin: -1px;
+   }
+
+   #foot-logo img {
+      width: 120px;
+    padding: 0px 5px;
+   }
+
+   .f-copyright {
+      padding: 10px 0px;
+      font-size: 12px;
+   }
+
+   .f-body ul {
+      padding: 15px;
+
+   }
+}
